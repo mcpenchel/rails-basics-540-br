@@ -1,0 +1,19 @@
+<h1>About us</h1>
+
+<h2>Check out more about what we do ...</h2>
+
+<%= Time.now %>
+
+<p>Conte-nos mais sobre você!</p>
+<form action="/sobre_nos" method="GET">
+  <input type="text" name="address">
+  <input type="number" name="age">
+  <input type="submit" value="Enviar!">
+</form>
+
+
+<ul>
+  <% @members.each do |member| %>
+    <li><%= member %></li>
+  <% end %>
+</ul>
